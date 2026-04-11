@@ -3,7 +3,7 @@
 
 - This list and these reviews are not exhaustive and your experience might differ; I'm just documenting my experience and writing these with somewhat less tech-savvy people in mind.
 
-- **Last Update: 29 March 2026**
+- **Last Update: 12 April 2026**
 
 <br />
 
@@ -40,16 +40,16 @@
 ## [dnstm](https://github.com/net2share/dnstm)
 |Type|Deployment|Usage|Tested|Result|
 |:-|:-|:-|:-|:-|
-|dnstt<br />Slipstream|1️⃣Easy|2️⃣Medium|v0.6.8|✅|
+|dnstt<br />Slipstream<br />vaydns|1️⃣Easy|2️⃣Medium|v0.7.1|✅|
 
-> The best way to run DNS tunnels right now and it's the most stable script with the least system load. soon it will have another promising protocol (**vaydns**).
+> The best way to run DNS tunnels right now and it's the most stable script with the least system load.
 
 ## [dnstm-setup](https://github.com/SamNet-dev/dnstm-setup)
 |Type|Deployment|Usage|Tested|Result|
 |:-|:-|:-|:-|:-|
-|dnstt<br />slipstream<br />NoizDNS|1️⃣Easy|2️⃣Medium|v1.3.1|✅|
+|dnstt<br />slipstream<br />NoizDNS|1️⃣Easy|2️⃣Medium|v1.4.0|✅|
 
-> Like the above tool but it has **NoizDNS** (another good DNS tunneling protocol) with a bit more overhead on server but robust and awesome.
+> Like the above tool but it has **NoizDNS** (another good DNS tunneling protocol) with a bit more overhead on server but robust and awesome. Its **vaydns** only supports **dnstt** compability mode though as of now.
 
 ## [dnstt](https://www.bamsoftware.com/software/dnstt/)
 |Type|Deployment|Usage|Tested|Result|
@@ -75,16 +75,16 @@
 ## [Hiddify-Manager](https://github.com/hiddify/Hiddify-Manager/)
 |Type|Deployment|Usage|Tested|Result|
 |:-|:-|:-|:-|:-|
-|dnstt<br />MTProto<br />SSH Proxy<br />sing-box<br />vaydns<br />Xray-core|1️⃣Easy|1️⃣Easy|v12.1.0b9|✅|
+|dnstt<br />MTProto<br />SSH Proxy<br />sing-box<br />vaydns<br />Xray-core|1️⃣Easy|1️⃣Easy|v12.2.0b1|✅|
 
-> You must the beta version to utilize **dnstt** and **vaydns** features. Other ways to connect is a bonus but you can't use other things directly.
+> You must the beta version to utilize **dnstt** and **vaydns** features. Other ways to connect is a bonus but you can't use other things directly. There are ligher and better tools for using **vaydns** & **dnstt** though, use those.
 
 ## [MasterDnsVPN](https://github.com/masterking32/MasterDnsVPN)
 |Type|Deployment|Usage|Tested|Result|
 |:-|:-|:-|:-|:-|
-|MasterDnsVPN|3️⃣Hard|3️⃣Hard|v2026.03.28.182835-ee0bcf8|✅|
+|MasterDnsVPN|4️⃣Very Hard|3️⃣Hard|v2026.04.11.044523-0639f8b|✅|
 
-> A new DNS tunneling method, in active development and lacks client but results are promising and worth using in current situation.
+> A new DNS tunneling method, in active development. Has some ok-ish clients & results are promising and worth using in current situation but it has many variables to set.
 
 ## [MoaV](https://github.com/shayanb/MoaV)
 |Type|Deployment|Usage|Tested|Result|
@@ -93,7 +93,14 @@
 
 > The only tool that setups xDNS without a hassle, but you have to choose between which DNS tunneling tool you want.
 
-## [paqet](https://github.com/hanselime/paqet)
+## [paqctl](https://github.com/SamNet-dev/paqctl)
+|Type|Deployment|Usage|Tested|Result|
+|:-|:-|:-|:-|:-|
+|GFK<br />paqet|2️⃣Medium|3️⃣Hard|v19/2/2026|❌|
+
+> it setups **paqet** and GFW-Knocker method of violated TCP/QUIC in a rather easy way. Sadly paqet doesn't work in current conditions and i could never make GFK method work even before current shutdown.
+
+## [paqet](https://github.com/SamNet-dev/paqctl)
 |Type|Deployment|Usage|Tested|Result|
 |:-|:-|:-|:-|:-|
 |paqet|4️⃣Very Hard|4️⃣Very Hard|v1.0.0-alpha.19|❌|
@@ -110,11 +117,9 @@
 ## [slipgate](https://github.com/anonvector/slipgate)
 |Type|Deployment|Usage|Tested|Result|
 |:-|:-|:-|:-|:-|
-|dnstt<br />SSH Tunnel<br />slipstream<br />SOCKS5 Proxy<br />NaïveProxy<br />NoizDNS|1️⃣Easy|1️⃣Easy|v1.3.1|✅|
+|dnstt<br />NaïveProxy<br />NoizDNS<br />slipstream<br />SOCKS5 Proxy<br />SSH Tunnel<br />StunTLS|1️⃣Easy|1️⃣Easy|v1.6.1|✅|
 
-> Made by the dev of SlipNet, the best Android client to use most of DNS tunnels. It has some memory leaks so keep an eye on server resources. Only use DNS tunnel stuff for now, rest is useless. You can use an advanced and fast DNS resolver scan though which is only possible with this script.
-
-⚠️ The SOCKS5 way of connection doesn't work very well it seems. **dnstm** is fine, but not this script. SSH is better for current condition though.
+> Made by the dev of SlipNet, the best Android client to use most of DNS tunnels. Only use DNS tunnel stuff for now, rest is useless. You can use an advanced and fast DNS resolver scan though which is only possible with this script.
 
 ## [slipstream](https://github.com/EndPositive/slipstream)
 |Type|Deployment|Usage|Tested|Result|
@@ -154,23 +159,23 @@
 ## [s-ui](https://github.com/alireza0/s-ui)
 |Type|Deployment|Usage|Tested|Result|
 |:-|:-|:-|:-|:-|
-|sing-box|3️⃣Hard|1️⃣Easy|v1.4.0|❌|
+|sing-box|3️⃣Hard|1️⃣Easy|v1.4.1|❌|
 
 > Can't work directly in current condition. Needs a whitelisted IR IP.
 
 ## [TrustTunnel](https://github.com/TrustTunnel/TrustTunnel)
 |Type|Deployment|Usage|Tested|Result|
 |:-|:-|:-|:-|:-|
-|TrustTunnel|3️⃣Hard|3️⃣Hard|v1.0.17|❌|
+|TrustTunnel|3️⃣Hard|3️⃣Hard|v1.0.33|❌|
 
 > Doesn't work.
 
 ## [vaydns](https://github.com/net2share/vaydns)
 |Type|Deployment|Usage|Tested|Result|
 |:-|:-|:-|:-|:-|
-|vaydns|3️⃣Hard|3️⃣Hard|v0.2.5|✅|
+|vaydns|3️⃣Hard|3️⃣Hard|v0.2.8|✅|
 
-> Another new DNS tunneling tool with very interesting results. soon to be added to **dnstm**. lacks client but can be made to work with **dnstt** clients, with its own client it's very good, with compability-mode, it varies.
+> Another new DNS tunneling tool with very interesting results. With its own mode it's very good, with compability-mode, it varies. VERY CPU intensive but it has good speed and stability in current conditions.
 
 ## [Xray-core](https://github.com/XTLS/Xray-core)
 |Type|Deployment|Usage|Tested|Result|
@@ -186,16 +191,23 @@
 - [dnst-scanner](https://github.com/net2share/dnst-scanner)
 - [findns](github.com/SamNet-dev/findns/)
 - [range-scout](https://github.com/iampedii/range-scout)
+- [f35](https://github.com/nxdp/f35)
 
 <br />
 
 # 🚀 Clients
 
 - [SlipNet](https://github.com/anonvector/SlipNet)
+- [MasterDnsVPN](https://github.com/RevocGG/MasterDnsVPN-AndroidGG) ⚠️ Use version 1.6 or below, newer versions are buggy as of writing of this review
+- [MDV HN](https://github.com/Hidden-Node/MasterDnsVPN-AndroidClient)
 
 <br />
 
 # 📝 Changelog
+
+12/4/2026
+
+> Testing updated versions, adding more info, tools & clients
 
 29/3/2026
 

@@ -1,209 +1,161 @@
 # Introduction
-- This repo contains the list of tools I've tested for bypassing the IR GFW and my results.
+- This repo contains the list of tools that works for bypassing the IR GFW during these shutdowns.
 
-- This list and these reviews are not exhaustive and your experience might differ; I'm just documenting my experience and writing these with somewhat less tech-savvy people in mind.
+- Most of these need VPS to run but you might be able to find public servers/configs for them in channels/groups.
 
-- **Last Update: 12 April 2026**
+- **Last Update: 22 May 2026**
 
 <br />
 
 # ⚡ Circumvention Tools
 
 ## [3x-ui](https://github.com/MHSanaei/3x-ui)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|Xray-core|3️⃣Hard|1️⃣Easy|v2.8.11|✅|
 
-> If you can utilize xDNS & FinalMask feature, you can make it work, else traditional ways is ineffective without a whitelisted IR IP.
-
-## [Amnezia Self-hosted](https://amnezia.org/starter-guide)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|AmneziaWG<br />IKEv2<br />OpenVPN (+ Cloak)<br />Wireguard<br />REALITY|1️⃣Easy|1️⃣Easy|v4.8.14.5|❌|
-
-> Useless in current situation.
-
-## [BPB-Worker-Panel](https://github.com/bia-pain-bache/BPB-Worker-Panel)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|Trojan<br />VLESS<br />WARP<br />WARP Pro|1️⃣Easy|1️⃣Easy|v4.1.13|❌|
-
-> If you can chain-proxy or something, it can be useful, else you can't use it directly since CF is blocked.
-
-## [CompassVPN](https://www.compassvpn.org/)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|VLESS|2️⃣Medium|1️⃣Easy|v27/1/2026|❌|
-
-> It wasn't working much before and useless now.
+> Needs VPS. Runs **xDNS** DNS tunnel.
 
 ## [dnstm](https://github.com/net2share/dnstm)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|dnstt<br />Slipstream<br />vaydns|1️⃣Easy|2️⃣Medium|v0.7.1|✅|
 
-> The best way to run DNS tunnels right now and it's the most stable script with the least system load.
+> Needs VPS. Runs **dnstt**, **vaydns** & **slipstream** DNS tunnels.
 
 ## [dnstm-setup](https://github.com/SamNet-dev/dnstm-setup)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|dnstt<br />slipstream<br />NoizDNS|1️⃣Easy|2️⃣Medium|v1.4.0|✅|
 
-> Like the above tool but it has **NoizDNS** (another good DNS tunneling protocol) with a bit more overhead on server but robust and awesome. Its **vaydns** only supports **dnstt** compability mode though as of now.
+> Like above but has **NoizDNS**. Its **vaydns** only supports **dnstt** compability mode.
 
-## [dnstt](https://www.bamsoftware.com/software/dnstt/)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|dnstt|4️⃣Very Hard|2️⃣Medium|v20241021|✅|
+## [FlowDriver](https://github.com/NullLatency/FlowDriver)
 
-> One of the cornerstones of bypassing total internet shutdowns IR GFW applies to this date. During those times you need a working DNS resolver though which might not work for everyone. The project itself is not easy to deploy since you have to do everything manually but you will have more options to configure your tunnel. There are other tools that make deploying this kind of server much easier, use them instead like above or below entry.
+> Needs VPS. Works as long as **Google** is open.
 
-## [dnstt-deploy](https://github.com/bugfloyd/dnstt-deploy)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|dnstt|1️⃣Easy|2️⃣Medium|v25/6/2025|✅|
+## [g2ray](https://github.com/edrisranjbar/g2ray)
 
-> Easy to setup, hard to remove. Use other tools to deploy **dnstt** since the script is not updated for a long time.
+> Needs VPN. v2ray over GitHub. IDK if it works now.
 
-## [dns-tun-lb](https://github.com/aleskxyz/dns-tun-lb)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|dnstt<br />NoizDNS<br />slipstream|2️⃣Medium|2️⃣Medium|v0.3.0|✅|
+## [GooseRelayVPN](GooseRelayVPN)
 
-> DNS tunnel load balancer which supports **dnstt**, **NoizDNS** and **slipstream**. Haven't tested under high load so don't know how effective it is. It works though.
+> Needs VPS. Works as long as **Google** is open.
 
 ## [Hiddify-Manager](https://github.com/hiddify/Hiddify-Manager/)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|dnstt<br />MTProto<br />SSH Proxy<br />sing-box<br />vaydns<br />Xray-core|1️⃣Easy|1️⃣Easy|v12.2.0b1|✅|
 
-> You must the beta version to utilize **dnstt** and **vaydns** features. Other ways to connect is a bonus but you can't use other things directly. There are ligher and better tools for using **vaydns** & **dnstt** though, use those.
+> Needs VPS. Only its **dnstt**/**vaydns** DNS tunnel works.
 
 ## [MasterDnsVPN](https://github.com/masterking32/MasterDnsVPN)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|MasterDnsVPN|4️⃣Very Hard|3️⃣Hard|v2026.04.11.044523-0639f8b|✅|
 
-> A new DNS tunneling method, in active development. Has some ok-ish clients & results are promising and worth using in current situation but it has many variables to set.
+> Needs VPS. Its own DNS tunnel.
+
+## [MITM-DomainFronting](https://github.com/patterniha/MITM-DomainFronting)
+
+> Opens some sites.
+
+## [MasterHttpRelayVPN](https://github.com/masterking32/MasterHttpRelayVPNv)
+
+> Works as long as **Google** is open.
+
+## [MasterHttpRelayVPN-RUST](https://github.com/therealaleph/MasterHttpRelayVPN-RUST)
+
+> Works as long as **Google** is open. More complete version of above tool.
+
+## [mhr-cfw](https://github.com/denuitt1/mhr-cfw)
+
+> Needs VPN. Works as long as **Google** is open. Same as **MasterHttpRelayVPN** but mixed with Cloudflare worker.
+
+## [mhr-cfw-go](https://github.com/denuitt1/mhr-cfw-go)
+
+> Same tool as above but in Go language.
 
 ## [MoaV](https://github.com/shayanb/MoaV)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|dnstt<br />sing-box<br />WireGuard<br />wstunnel<br />xDNS|1️⃣Easy|1️⃣Easy|v1.7.4|✅|
 
-> The only tool that setups xDNS without a hassle, but you have to choose between which DNS tunneling tool you want.
+> Needs VPS. Only **dnstt** or **xDNS** DNS tunnels works.
 
-## [paqctl](https://github.com/SamNet-dev/paqctl)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|GFK<br />paqet|2️⃣Medium|3️⃣Hard|v19/2/2026|❌|
+## [NovaProxy](https://github.com/IRNova/Nova-Proxy-App)
 
-> it setups **paqet** and GFW-Knocker method of violated TCP/QUIC in a rather easy way. Sadly paqet doesn't work in current conditions and i could never make GFK method work even before current shutdown.
+> Needs VPN. Works as long as **Google** is open. Windows Only.
 
-## [paqet](https://github.com/SamNet-dev/paqctl)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|paqet|4️⃣Very Hard|4️⃣Very Hard|v1.0.0-alpha.19|❌|
+## [Skirk](https://github.com/ShahabSL/Skirk)
 
-> Doesn't work.
-
-## [reality-ezpz](https://github.com/aleskxyz/reality-ezpz)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|sing-box<br />Xray-core|1️⃣Easy|1️⃣Easy|v6/1/2026|❌|
-
-> Doesn't work.
+> Needs VPS. Works as long as **Google** is open.
 
 ## [slipgate](https://github.com/anonvector/slipgate)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|dnstt<br />NaïveProxy<br />NoizDNS<br />slipstream<br />SOCKS5 Proxy<br />SSH Tunnel<br />StunTLS|1️⃣Easy|1️⃣Easy|v1.6.1|✅|
 
-> Made by the dev of SlipNet, the best Android client to use most of DNS tunnels. Only use DNS tunnel stuff for now, rest is useless. You can use an advanced and fast DNS resolver scan though which is only possible with this script.
+> Needs VPS. Runs **dnstt**, **NoizDNS**, **slipstream**, **vaydns** DNS tunnel.
 
-## [slipstream](https://github.com/EndPositive/slipstream)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|slipstream|2️⃣Medium|4️⃣Very Hard|v0.1.0|✅|
+## [SNI-Spoofing](https://github.com/patterniha/SNI-Spoofing)
 
-> Cousin of **dnstt** but faster and more advanced! not for general use because it lacks client. Read below.
+> If IR GFW opens a Cloudflare IP directly for people to access, you can use it with a Cloudflare v2ray config. For Windows.
 
-## [slipstream-rust](https://github.com/Mygod/slipstream-rust/)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|slipstream|4️⃣Very Hard|3️⃣Hard|efd78e3|✅|
+## [sni-spoofing-rust](https://github.com/therealaleph/sni-spoofing-rust)
 
-> Rewrite of **slipstream** in Rust with even faster speed and some new cool features which adds to its setup complexity since it doesn't have an easy installer or even pre-compiled binaries (you have to build it yourself if you want to use this repo or see the solution below). There are good clients for it so using it is easier than its original implementation in C. Currently it doesn't work on all the ISPs.
+> Like above but for Linux, MacOS & Windows.
 
-## [slipstream-rust-deploy](https://github.com/AliRezaBeigy/slipstream-rust-deploy)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|slipstream|1️⃣Easy|3️⃣Hard|efd78e3|✅|
+## [SNI-Proxy](https://github.com/nullroute1970/SNI-Proxy)
 
-> An easy way to deploy **slipstream-rust**, get binaries for different clients and very good guide in general. Currently it doesn't work on all the ISPs.
+> Like **SNI-Spoofing** but for Windows.
 
-## [slipstream-rust-plus](https://github.com/Fox-Fig/slipstream-rust-plus)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|slipstream-rust-plus|3️⃣Hard|4️⃣Very Hard|5af5198|❌|
+## [sni-spoof](https://github.com/selfishblackberry177/sni-spoof)
 
-> Too fast for its own good, GFW slays it. Lacks client.
+> Like **SNI-Spoofing** but for Linux.
 
-## [slipstream-rust-plus-deploy](https://github.com/Fox-Fig/slipstream-rust-plus-deploy)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|slipstream-rust-plus|1️⃣Easy|4️⃣Very Hard|a2db384|❌|
+## [FakeSNI](https://github.com/PechenyeRU/FakeSNI)
 
-> Script to setup above method, not useful currently. Lacks client.
+> Like **SNI-Spoofing** but for Linux.
 
-## [s-ui](https://github.com/alireza0/s-ui)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|sing-box|3️⃣Hard|1️⃣Easy|v1.4.1|❌|
+## [StormDNS](https://github.com/nullroute1970/StormDNS)
 
-> Can't work directly in current condition. Needs a whitelisted IR IP.
+> Needs VPS. Its own DNS tunnel. A good fork of **MasterDnsVPN**.
 
-## [TrustTunnel](https://github.com/TrustTunnel/TrustTunnel)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|TrustTunnel|3️⃣Hard|3️⃣Hard|v1.0.33|❌|
+## [twoman](https://github.com/ShahabSL/twoman)
 
-> Doesn't work.
-
-## [vaydns](https://github.com/net2share/vaydns)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|vaydns|3️⃣Hard|3️⃣Hard|v0.2.8|✅|
-
-> Another new DNS tunneling tool with very interesting results. With its own mode it's very good, with compability-mode, it varies. VERY CPU intensive but it has good speed and stability in current conditions.
-
-## [Xray-core](https://github.com/XTLS/Xray-core)
-|Type|Deployment|Usage|Tested|Result|
-|:-|:-|:-|:-|:-|
-|Xray-core|4️⃣Very Hard|4️⃣Very Hard|v26.3.27|✅|
-
-> If you can utilize xDNS & FinalMask feature, you can make it work, else traditional ways are ineffective without a whitelisted IR IP. Very cutting-edge though and flexible. have to RTFM.
+> Needs VPS + cPanel host.
 
 <br />
 
 # ✨ Complementary Tools
 
+## [Shir o Khorshid](https://github.com/shirokhorshid/shirokhorshid-android)
+
+> Use CDN Fronting + Clean IP/SNI
+
+## [theFeed](https://github.com/sartoopjj/thefeed)
+
+> Needs VPS. Check Telegram & Twitter with DNS
+
+## Scanners:
+
 - [dnst-scanner](https://github.com/net2share/dnst-scanner)
 - [findns](github.com/SamNet-dev/findns/)
 - [range-scout](https://github.com/iampedii/range-scout)
 - [f35](https://github.com/nxdp/f35)
+- [network-checker](https://github.com/mirarr-app/network-checker)
+- [sni-scanner](https://github.com/seramo/sni-scanner)
+- [sniper](https://github.com/nxdp/sniper)
+
+## Other Stuff:
+
+- [AzuDL-GC2GD](https://github.com/TheGreatAzizi/AzuDL-GC2GD)
+- [downloader](https://github.com/nikzad-avasam/downloader)
+- [teleMirror](https://github.com/ircfspace/teleMirrorv)
+- [TunnelX](https://github.com/MaxiFan/TunnelX)
 
 <br />
 
 # 🚀 Clients
 
 - [SlipNet](https://github.com/anonvector/SlipNet)
-- [MasterDnsVPN](https://github.com/RevocGG/MasterDnsVPN-AndroidGG) ⚠️ Use version 1.6 or below, newer versions are buggy as of writing of this review
-- [MDV HN](https://github.com/Hidden-Node/MasterDnsVPN-AndroidClient)
+- [WhiteDNS](https://github.com/iampedii/WhiteDNS)
+- [MahsaNG](https://github.com/GFW-knocker/MahsaNG)
+- [NexaTunnel](https://apps.apple.com/app/nexatunnel/id6766783641)
+- [MasterDnsVPN-AndroidGG](https://github.com/RevocGG/MasterDnsVPN-AndroidGG)
+- [MasterDnsVPN-AndroidClient](https://github.com/Hidden-Node/MasterDnsVPN-AndroidClient)
+- [GooseRelayVPN-AndroidClient](https://github.com/Hidden-Node/GooseRelayVPN-AndroidClient)
+- [KevinNet DNS](https://github.com/kamalalhagh/kevinnet-dns)
+- [Shade](https://github.com/g3ntrix/Shade)
+- [Loole](https://github.com/g3ntrix/Loole)
 
 <br />
 
 # 📝 Changelog
+
+22/5/2026
+
+> Removing useless solutions, making everything smaller, adding more tools & stuff
 
 12/4/2026
 

@@ -3,7 +3,7 @@
 
 - Most of these need VPS to run but you might be able to find public servers/configs for them in channels/groups.
 
-- **Last Update: 22 May 2026**
+- **Last Update: 8 June 2026**
 
 <br />
 
@@ -83,7 +83,11 @@
 
 ## [sni-spoofing-rust](https://github.com/therealaleph/sni-spoofing-rust)
 
-> Like above but for Linux, MacOS & Windows.
+> Like above but for Linux, MacOS & Windows with GUI.
+
+## [SpoofGUI](https://github.com/ZethRise/SpoofGUI)
+
+> Like **SNI-Spoofing** but for Windows with GUI.
 
 ## [SNI-Proxy](https://github.com/nullroute1970/SNI-Proxy)
 
@@ -126,6 +130,8 @@
 - [network-checker](https://github.com/mirarr-app/network-checker)
 - [sni-scanner](https://github.com/seramo/sni-scanner)
 - [sniper](https://github.com/nxdp/sniper)
+- [TheScanner](https://github.com/sartoopjj/thescanner)
+- [SenPaiScanner](https://github.com/MatinSenPai/SenPaiScanner)
 
 ## Other Stuff:
 
@@ -142,6 +148,7 @@
 - [WhiteDNS](https://github.com/iampedii/WhiteDNS)
 - [MahsaNG](https://github.com/GFW-knocker/MahsaNG)
 - [NexaTunnel](https://apps.apple.com/app/nexatunnel/id6766783641)
+- [AzadiTunnel](https://apps.apple.com/us/app/azaditunnel/id6776486891)
 - [MasterDnsVPN-AndroidGG](https://github.com/RevocGG/MasterDnsVPN-AndroidGG)
 - [MasterDnsVPN-AndroidClient](https://github.com/Hidden-Node/MasterDnsVPN-AndroidClient)
 - [GooseRelayVPN-AndroidClient](https://github.com/Hidden-Node/GooseRelayVPN-AndroidClient)
@@ -152,6 +159,10 @@
 <br />
 
 # 📝 Changelog
+
+8/6/2026
+
+> Adding more tools & stuff
 
 22/5/2026
 

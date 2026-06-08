@@ -105,7 +105,7 @@
 - [MasterDnsVPN-AndroidClient](https://github.com/Hidden-Node/MasterDnsVPN-AndroidClient) [MasterDnsVPN, StormDNS]
 - [GooseRelayVPN-AndroidClient](https://github.com/Hidden-Node/GooseRelayVPN-AndroidClient) [GooseRelayVPN]
 - [KevinNet DNS](https://github.com/kamalalhagh/kevinnet-dns) [MasterDnsVPN, StormDNS]
-- [Hiddify](https://github.com/hiddify/hiddify-app) [sing-box, Xray-core, WARP  + Free Configs]
+- [Hiddify](https://github.com/hiddify/hiddify-app) [sing-box, Xray-core, WARP, DNSTT/VayDNS  + Free Configs]
 
 <br />
 

@@ -15,11 +15,11 @@
 
 ## [dnstm](https://github.com/net2share/dnstm)
 
-> Needs VPS. Runs **dnstt**, **vaydns** & **slipstream** DNS tunnels.
+> Needs VPS. Runs **DNSTT**, **VayDNS** & **Slipstream** DNS tunnels.
 
 ## [dnstm-setup](https://github.com/SamNet-dev/dnstm-setup)
 
-> Like above but has **NoizDNS**. Its **vaydns** only supports **dnstt** compability mode.
+> Like above but has **NoizDNS**. Its **VayDNS** only supports **DNSTT** compability mode.
 
 ## [FlowDriver](https://github.com/NullLatency/FlowDriver)
 
@@ -35,7 +35,11 @@
 
 ## [Hiddify-Manager](https://github.com/hiddify/Hiddify-Manager/)
 
-> Needs VPS. Only its **dnstt**/**vaydns** DNS tunnel works.
+> Needs VPS. Only its **DNSTT**/**VayDNS** DNS tunnel works.
+
+## [Loole](https://github.com/g3ntrix/Loole)
+
+> Needs VPS. Like **FlowDriver**, works as long as **Google** is open. Mac only.
 
 ## [MasterDnsVPN](https://github.com/masterking32/MasterDnsVPN)
 
@@ -63,19 +67,50 @@
 
 ## [MoaV](https://github.com/shayanb/MoaV)
 
-> Needs VPS. Only **dnstt** or **xDNS** DNS tunnels works.
+> Needs VPS. Only **DNSTT**, **MasterDnsVPN**, **xDNS** DNS tunnels & **GooseRelayVPN** works.
 
 ## [NovaProxy](https://github.com/IRNova/Nova-Proxy-App)
 
-> Needs VPN. Works as long as **Google** is open. Windows Only.
+> Needs VPN. Works as long as **Google** is open. Windows only.
 
 ## [Skirk](https://github.com/ShahabSL/Skirk)
 
 > Needs VPS. Works as long as **Google** is open.
 
-## [slipgate](https://github.com/anonvector/slipgate)
+## [Shade](https://github.com/g3ntrix/Shade)
 
-> Needs VPS. Runs **dnstt**, **NoizDNS**, **slipstream**, **vaydns** DNS tunnel.
+> Works as long as **Google** is open.
+
+## [SlipGate](https://github.com/anonvector/slipgate)
+
+> Needs VPS. Runs **DNSTT**, **NoizDNS**, **Slipstream**, **VayDNS** DNS tunnel.
+
+## [StormDNS](https://github.com/nullroute1970/StormDNS)
+
+> Needs VPS. Its own DNS tunnel. A fork of **MasterDnsVPN**.
+
+## [twoman](https://github.com/ShahabSL/twoman)
+
+> Needs VPS + cPanel host.
+
+<br />
+
+# 🚀 Clients
+
+- [SlipNet](https://github.com/anonvector/SlipNet)
+- [WhiteDNS](https://github.com/iampedii/WhiteDNS)
+- [MahsaNG](https://github.com/GFW-knocker/MahsaNG)
+- [NexaTunnel](https://apps.apple.com/app/nexatunnel/id6766783641)
+- [MasterDnsVPN-AndroidGG](https://github.com/RevocGG/MasterDnsVPN-AndroidGG)
+- [MasterDnsVPN-AndroidClient](https://github.com/Hidden-Node/MasterDnsVPN-AndroidClient)
+- [GooseRelayVPN-AndroidClient](https://github.com/Hidden-Node/GooseRelayVPN-AndroidClient)
+- [KevinNet DNS](https://github.com/kamalalhagh/kevinnet-dns)
+
+<br />
+
+# 🟩 SNI Spoofing
+
+> SNI Spoofing method by [patterniha](https://github.com/patterniha) has many clients so i decided to give it a separate section.
 
 ## [SNI-Spoofing](https://github.com/patterniha/SNI-Spoofing)
 
@@ -84,6 +119,14 @@
 ## [sni-spoofing-rust](https://github.com/therealaleph/sni-spoofing-rust)
 
 > Like above but for Linux, MacOS & Windows with GUI.
+
+## [SNI-Spoofing-Go](https://github.com/aleskxyz/SNI-Spoofing-Go)
+
+> Like **SNI-Spoofing** but with GUI and some more tools.
+
+## [Cloak](https://github.com/g3ntrix/Cloak)
+
+> Like **SNI-Spoofing** but with GUI. MacOS only.
 
 ## [SpoofGUI](https://github.com/ZethRise/SpoofGUI)
 
@@ -101,27 +144,23 @@
 
 > Like **SNI-Spoofing** but for Linux.
 
-## [StormDNS](https://github.com/nullroute1970/StormDNS)
-
-> Needs VPS. Its own DNS tunnel. A good fork of **MasterDnsVPN**.
-
-## [twoman](https://github.com/ShahabSL/twoman)
-
-> Needs VPS + cPanel host.
-
 <br />
 
 # ✨ Complementary Tools
 
 ## [Shir o Khorshid](https://github.com/shirokhorshid/shirokhorshid-android)
 
-> Use CDN Fronting + Clean IP/SNI
+> Use CDN Fronting + Clean IP/SNI (Android)
 
-## [theFeed](https://github.com/sartoopjj/thefeed)
+## [AzadiTunnel](https://apps.apple.com/us/app/azaditunnel/id6776486891)
+
+> Use CDN Fronting + Clean IP/SNI (iOS)
+
+## [TheFeed](https://github.com/sartoopjj/thefeed)
 
 > Needs VPS. Check Telegram & Twitter with DNS
 
-## Scanners:
+# 🔎 Scanners:
 
 - [dnst-scanner](https://github.com/net2share/dnst-scanner)
 - [findns](github.com/SamNet-dev/findns/)
@@ -133,7 +172,9 @@
 - [TheScanner](https://github.com/sartoopjj/thescanner)
 - [SenPaiScanner](https://github.com/MatinSenPai/SenPaiScanner)
 
-## Other Stuff:
+<br />
+
+# 🛄 Other Stuff:
 
 - [AzuDL-GC2GD](https://github.com/TheGreatAzizi/AzuDL-GC2GD)
 - [downloader](https://github.com/nikzad-avasam/downloader)
@@ -142,27 +183,11 @@
 
 <br />
 
-# 🚀 Clients
-
-- [SlipNet](https://github.com/anonvector/SlipNet)
-- [WhiteDNS](https://github.com/iampedii/WhiteDNS)
-- [MahsaNG](https://github.com/GFW-knocker/MahsaNG)
-- [NexaTunnel](https://apps.apple.com/app/nexatunnel/id6766783641)
-- [AzadiTunnel](https://apps.apple.com/us/app/azaditunnel/id6776486891)
-- [MasterDnsVPN-AndroidGG](https://github.com/RevocGG/MasterDnsVPN-AndroidGG)
-- [MasterDnsVPN-AndroidClient](https://github.com/Hidden-Node/MasterDnsVPN-AndroidClient)
-- [GooseRelayVPN-AndroidClient](https://github.com/Hidden-Node/GooseRelayVPN-AndroidClient)
-- [KevinNet DNS](https://github.com/kamalalhagh/kevinnet-dns)
-- [Shade](https://github.com/g3ntrix/Shade)
-- [Loole](https://github.com/g3ntrix/Loole)
-
-<br />
-
 # 📝 Changelog
 
 8/6/2026
 
-> Adding more tools & stuff
+> Adding more tools & stuff with better classification
 
 22/5/2026
 

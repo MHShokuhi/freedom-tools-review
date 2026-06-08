@@ -97,68 +97,48 @@
 
 # 🚀 Clients
 
-- [SlipNet](https://github.com/anonvector/SlipNet)
-- [WhiteDNS](https://github.com/iampedii/WhiteDNS)
-- [MahsaNG](https://github.com/GFW-knocker/MahsaNG)
-- [NexaTunnel](https://apps.apple.com/app/nexatunnel/id6766783641)
-- [MasterDnsVPN-AndroidGG](https://github.com/RevocGG/MasterDnsVPN-AndroidGG)
-- [MasterDnsVPN-AndroidClient](https://github.com/Hidden-Node/MasterDnsVPN-AndroidClient)
-- [GooseRelayVPN-AndroidClient](https://github.com/Hidden-Node/GooseRelayVPN-AndroidClient)
-- [KevinNet DNS](https://github.com/kamalalhagh/kevinnet-dns)
-
-<br />
-
-# 🟩 SNI Spoofing
-
-> SNI Spoofing method by [patterniha](https://github.com/patterniha) has many clients so i decided to give it a separate section.
-
-## [SNI-Spoofing](https://github.com/patterniha/SNI-Spoofing)
-
-> If IR GFW opens a Cloudflare IP directly for people to access, you can use it with a Cloudflare v2ray config. For Windows.
-
-## [sni-spoofing-rust](https://github.com/therealaleph/sni-spoofing-rust)
-
-> Like above but for Linux, MacOS & Windows with GUI.
-
-## [SNI-Spoofing-Go](https://github.com/aleskxyz/SNI-Spoofing-Go)
-
-> Like **SNI-Spoofing** but with GUI and some more tools.
-
-## [Cloak](https://github.com/g3ntrix/Cloak)
-
-> Like **SNI-Spoofing** but with GUI. MacOS only.
-
-## [SpoofGUI](https://github.com/ZethRise/SpoofGUI)
-
-> Like **SNI-Spoofing** but for Windows with GUI.
-
-## [SNI-Proxy](https://github.com/nullroute1970/SNI-Proxy)
-
-> Like **SNI-Spoofing** but for Windows.
-
-## [sni-spoof](https://github.com/selfishblackberry177/sni-spoof)
-
-> Like **SNI-Spoofing** but for Linux.
-
-## [FakeSNI](https://github.com/PechenyeRU/FakeSNI)
-
-> Like **SNI-Spoofing** but for Linux.
+- [SlipNet](https://github.com/anonvector/SlipNet) [DNSTT, NoizDNS, VayDNS, VayDNS, Slipstream, SSH, NaïveProxy, DoH, Tor, VLESS WS]
+- [WhiteDNS](https://github.com/iampedii/WhiteDNS) [MasterDnsVPN, StormDNS]
+- [MahsaNG](https://github.com/GFW-knocker/MahsaNG) [Xray-core, WARP, DNSTT, MasterDnsVPN, GooseRelayVPN, FlowDriver, Psiphon with CDN Fronting + Free Configs]
+- [NexaTunnel](https://apps.apple.com/app/nexatunnel/id6766783641) [iOS: MasterDnsVPN, StormDNS]
+- [MasterDnsVPN-AndroidGG](https://github.com/RevocGG/MasterDnsVPN-AndroidGG) [MasterDnsVPN, StormDNS]
+- [MasterDnsVPN-AndroidClient](https://github.com/Hidden-Node/MasterDnsVPN-AndroidClient) [MasterDnsVPN, StormDNS]
+- [GooseRelayVPN-AndroidClient](https://github.com/Hidden-Node/GooseRelayVPN-AndroidClient) [GooseRelayVPN]
+- [KevinNet DNS](https://github.com/kamalalhagh/kevinnet-dns) [MasterDnsVPN, StormDNS]
+- [Hiddify](https://github.com/hiddify/hiddify-app) [sing-box, Xray-core, WARP  + Free Configs]
 
 <br />
 
 # ✨ Complementary Tools
 
-## [Shir o Khorshid](https://github.com/shirokhorshid/shirokhorshid-android)
-
-> Use CDN Fronting + Clean IP/SNI (Android)
-
 ## [AzadiTunnel](https://apps.apple.com/us/app/azaditunnel/id6776486891)
 
 > Use CDN Fronting + Clean IP/SNI (iOS)
 
+## [Shir o Khorshid](https://github.com/shirokhorshid/shirokhorshid-android)
+
+> Use CDN Fronting + Clean IP/SNI (Android)
+
 ## [TheFeed](https://github.com/sartoopjj/thefeed)
 
 > Needs VPS. Check Telegram & Twitter with DNS
+
+<br />
+
+# 🟩 SNI Spoofing
+
+> If IR GFW opens a Cloudflare IP directly for people to access, you can use it with a Cloudflare v2ray config. Since SNI Spoofing method by [patterniha](https://github.com/patterniha) has many clients, i decided to give it a separate section. Order is my personal preference for using them.
+
+- [SNI-Spoofing](https://github.com/patterniha/SNI-Spoofing) [Windows]
+- [sni-spoofing-rust](https://github.com/therealaleph/sni-spoofing-rust) [Linux, MacOS, Windows + GUI]
+- [SNI-Spoofing-Go](https://github.com/aleskxyz/SNI-Spoofing-Go) [Linux, MacOS, Windows + GUI]
+- [Cloak](https://github.com/g3ntrix/Cloak) [MacOS + GUI]
+- [SpoofGUI](https://github.com/ZethRise/SpoofGUI) [Windows + GUI]
+- [ZeroDPI](https://github.com/nullroute1970/ZeroDPI) [Windows, Linux + TUI]
+- [sni-spoof](https://github.com/selfishblackberry177/sni-spoof) [Linux]
+- [FakeSNI](https://github.com/PechenyeRU/FakeSNI) [Linux]
+
+<br />
 
 # 🔎 Scanners:
 
